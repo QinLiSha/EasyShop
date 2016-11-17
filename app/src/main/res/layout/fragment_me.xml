@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/me_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/iv_user_head"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_ico"
+            app:border="true"
+            app:border_color="#16f5f5f5"
+            app:border_width="@dimen/dp_6"
+            app:selector="true"
+            app:selector_color="#4D000000"
+            app:selector_stroke_color="#16f5f5f5"
+            app:selector_stroke_width="@dimen/dp_6"
+            app:shadow="false" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_person_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@color/white"
+            android:drawableRight="@drawable/selector_item_go"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/me_person_info"
+            android:textColor="@color/text_goods_name"
+            android:textSize="@dimen/sp_18" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_6" />
+
+        <TextView
+            android:id="@+id/tv_person_goods"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@color/white"
+            android:drawableRight="@drawable/selector_item_go"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/me_person_goods"
+            android:textColor="@color/text_goods_name"
+            android:textSize="@dimen/sp_18" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_6" />
+
+        <TextView
+            android:id="@+id/tv_goods_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@color/white"
+            android:drawableRight="@drawable/selector_item_go"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/me_goods_upload"
+            android:textColor="@color/text_goods_name"
+            android:textSize="@dimen/sp_18" />
+
+    </LinearLayout>
+
+</RelativeLayout>

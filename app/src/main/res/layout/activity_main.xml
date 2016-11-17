@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feicuiedu.com.easyshop.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/main_shop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="#fcfcfc"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_shopping"
+            android:gravity="center"
+            android:text="@string/main_shop"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_chat"
+            android:gravity="center"
+            android:text="@string/main_message"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_mail_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_people"
+            android:gravity="center"
+
+            android:text="@string/main_mail_list"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_ic_identity"
+            android:gravity="center"
+            android:text="@string/main_me"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+</RelativeLayout>
